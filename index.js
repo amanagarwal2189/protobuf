@@ -27,6 +27,7 @@ console.log(".");
 console.log("=========Data Received========");
 let desPerson = per.Person.deserializeBinary(bufPerson);
 const personObj = desPerson.toObject();
-console.log(`Name ${person.getName()}`);
-console.log(`Id ${person.getId()}`)
-console.log(`Email ${person.getEmail()}`)
+console.log({personObj});
+console.log(desPerson.getName())
+console.log(desPerson.getId())
+console.log(desPerson.getEmail())
